@@ -1,75 +1,31 @@
-# Nuxt 3 Minimal Starter
+## Jawaban Test nomor 3 - 7
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### 3
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```sql
+SELECT City, COUNT(CustomerID) as TotalCustomer from customers GROUP BY City
 ```
 
-## Development Server
+### 4
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+```sql
+SELECT * FROM customers WHERE Region IN (‘Mexico’,’Germany’);
 ```
 
-## Production
+### 5
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```sql
+SELECT * FROM customers WHERE CompanyName LIKE ‘cen%’;
 ```
 
-Locally preview production build:
+### 6
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```sql
+SELECT ProductName, UnitPrice FROM products ORDER BY UnitPrice DESC LIMIT 10;
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### 7
+
+```sql
+SELECT SUM(UnitsInStock) FROM products
+```
